@@ -1,0 +1,35 @@
+.wave-background-1,
+.wave-background-2,
+.wave-background-3,
+.wave-background-4 {
+    filter: brightness(0) invert(1);
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    background-image: url("../assets/images/wave.png");
+    background-position: top;
+
+}
+.wave-background-1 {
+    top: -120px;
+    height: 500px;
+    transform: rotate(180deg);
+}
+.wave-background-2 {
+    background: var(--clr-wave);
+    top: 200px;
+    height: 70%;
+    background-position: center;
+}
+.wave-background-3 {
+    background: var(--clr-wave);
+    top: -700px;
+    height: 600px;
+    background-position: center;
+}
+.wave-background-4 {
+    top: -400px;
+    height: 500px;
+    transform: scaleX(-1);
+}
