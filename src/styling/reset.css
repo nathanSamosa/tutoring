@@ -49,6 +49,7 @@ body {
     color: var(--clr-grey-1);
     line-height: 1.5;
     font-size: 1.1rem;
+    width: 100%;
 }
 
 h2,
@@ -133,3 +134,4 @@ p {
     padding: 20px;
     font-family: var(--ff-primary);
   }
+

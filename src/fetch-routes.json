@@ -1,0 +1,7 @@
+{
+    "local": {
+        "home": "http://localhost:3000",
+        "reviews": "http://localhost:3000/reviews",
+        "contacts": "http://localhost:3000/contacts"
+    }
+}

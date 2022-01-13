@@ -1,33 +1,21 @@
-import Nav from "./components/Nav"
-import Hero from "./components/Hero"
-import HowItWorks from "./components/HowItWorks"
-import WhatIOffer from "./components/WhatIOffer"
+import React from "react";
+import { Route, Routes } from "react-router"
 
-import "./styling/reset.css"
-import "./styling/waves.css"
-import "./styling/nav.css"
-import "./styling/hero.css"
-import "./styling/how-it-works.css"
-import "./styling/what-i-offer.css"
+import Home from "./Home"
+import ReviewPage from "./components/form-components/review-page"
+import ContactPage from "./components/form-components/contact-page";
+
+
 
 function App() {
-
-    const anchorLinks = ["#home", "#how-it-works"]
-
     return (
-        <>
-            <Nav anchorLinks={anchorLinks}/>
-
-            <div className="anchor" id="home"></div>
-            <Hero />
-
-            <div className="anchor" id="how-it-works"></div>
-            <HowItWorks />
-
-            <div className="anchor" id="what-i-offer"></div>
-            <WhatIOffer />
-        </>
-        
+        <div>
+            <Routes>
+                <Route path="/*" element={<Home />} />
+                <Route path="/review/*" element={<ReviewPage />} />
+                <Route path="/contact/*" element={<ContactPage />} />
+            </Routes>
+        </div>
     );
 }
 

@@ -102,3 +102,9 @@ h1 {
         background: transparent;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    h1, .h1color {
+        font-size: 30px
+    }
+}

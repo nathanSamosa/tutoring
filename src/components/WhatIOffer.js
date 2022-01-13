@@ -5,14 +5,17 @@ import four from "../assets/images/four.png"
 
 function WhatIOffer() {
     return (
-        <div class="background-wrap-what-i-offer">
-            <div class="wave-background-3"></div>
-            <div class="wave-background-4"></div>
+        <div className="background-wrap-what-i-offer">
+            <div className="wave-background-3"></div>
+            <div className="wave-background-4"></div>
 
-            <section class="section-center what-i-offer">
+            <section className="section-center what-i-offer">
                 <h3>What I offer</h3>
-                <div class="highlight">
-                    <span>1-to-1 sessions are <spam class="free">£25 per hour</spam>, and can be held in-person, on Zoom or a suitable public setting.</span>
+                <div className="highlight">
+                    <span>
+                        1-to-1 sessions are <span className="free">£25 per hour</span>,
+                        and can be held in-person, on Zoom or a suitable public setting.
+                    </span>
                 </div>
                 <h4>Before we start...</h4>
                 <p>
@@ -34,8 +37,8 @@ function WhatIOffer() {
                 <p>
                     We will use a learning framework with a proven track-record of success to plan our time together:
                 </p>
-                <section class="offer-grid">
-                    <article class="offer-grid-item">
+                <section className="offer-grid">
+                    <article className="offer-grid-item">
                         <img src={one}></img>
                         <div>
                             <h4>Recap</h4>
@@ -45,7 +48,7 @@ function WhatIOffer() {
                             </p>
                         </div>
                     </article>
-                    <article class="offer-grid-item">
+                    <article className="offer-grid-item">
                         <img src={two}></img>
                         <div>
                             <h4>Assessing our goals</h4>
@@ -56,7 +59,7 @@ function WhatIOffer() {
                             </p>
                         </div>
                     </article>
-                    <article class="offer-grid-item">
+                    <article className="offer-grid-item">
                         <img src={three}></img>
                         <div>
                             <h4>Multimedia learning</h4>
@@ -67,7 +70,7 @@ function WhatIOffer() {
                             </p>
                         </div>
                     </article>
-                    <article class="offer-grid-item">
+                    <article className="offer-grid-item">
                         <img src={four}></img>
                         <div>
                             <h4>Planning our next session</h4>
